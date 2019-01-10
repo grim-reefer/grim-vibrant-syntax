@@ -3,4 +3,4 @@ This is a colorful syntax theme for those of us who enjoy bright and easy to rea
 Feel free to Fork my theme and tweak it to your needs.
 or enjoy it as-is.
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+![ScreenShot](img/Theme.png)
