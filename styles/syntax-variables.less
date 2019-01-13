@@ -1,32 +1,144 @@
 @import "colors";
-// This defines all syntax variables that syntax themes must implement when they
-// include a syntax-variables.less file.
+//Defines All Syntax Variables
 
-// General colors
-@syntax-text-color: @yellow; //[],@,'',"".;,. & PLain Text etc
-@syntax-cursor-color: @yellow; //Cursor Color
-@syntax-selection-color: lighten(@black, 20%);
-@syntax-background-color: @black; //Page Color
+//General colors
 
+//Syntax Quoted Text Color
+@syntax-text-color: @yellow;
+//Text Color
+@text-color: @white;
+//Cursor Color
+@syntax-cursor-color: @lime;
+//Hightlight Selected
+@syntax-selection-color: @highlighter;
+//Page Color
+@syntax-background-color: @black;
+//Comment Text
+@comment-text: @gold;
+//Keywords
+@keyword: @lawngreen;
+//Control
+@control: @lime;
+//Syntax-Operator
+@syntax-operator: @red;
+//Syntax Other Special Method
+@syntax-other-special-method: @coral;
+//Syntax-Other-Unit
+@syntax-other-unit: @dark-red;
+//Storage
+@syntax-storage: @magenta;
+//Constants
+@syntax-constant: @lime;
+//Escape Key
+@syntax-escape: @silver;
+//Syntax-Numeric
+@syntax-numeric: @coral;
+//Syntax Other/Syntax
+@syntax-other-syntax: @yellow;
+//Syntax Other/Symbol
+@syntax-other-symbol: @lawngreen;
+//Syntax-Variable
+@syntax-variable: @deep-sky-blue;
+//Syntax-Interpolation
+@syntax-interpolation: @highlighter2;
+//Invalid BackGround
+@syntax-invalid:@highlighter2;
+//Invalid Text Color
+@syntax-invalid-text: @gray;
+//Strings
+@string: @syntax-text-color;
+//Regex
+@syntax-regex: @lawngreen;
+//Ruby Embedded?? <Idk wtf this is...
+@syntax-source-ruby-embedded: @red;
+//Syntax Other link
+@syntax-other-link: @cyan;
+//Punctuation/Definition/Comment such as '//' .etc
+@syntax-punctuation: @red;
+//Syntax Heading/Identity
+@syntax-heading: @white;
+//Syntax bold
+@syntax-bold: @yellow;
+//Syntax-Itallic
+@syntax-italic: @coral;
+//Syntax Section/Embedded
+@syntax-section-embedded: darken(@red, 10%);
+//Syntax Support/Class
+@syntax-support-class: @orange;
+//Syntax function
+@syntax-funtion: @cyan;
+//Syntax AnyMethod
+@syntax-any-method: @blue;
+//Syntax Entity/Function
+@syntax-entity-function: @deep-sky-blue;
+//Syntax Name/Type
+@syntax-name-type: @coral;
+//Syntax Other.syntax/InheritedClass
+@syntax-inherited-class: @lawngreen;
+//Syntax Name.class/Name.syntaxType.syntaxClass
+@syntax-name-class: @orange;
+//Syntax Section
+@synatx-section: @blue;
+//Syntax Tags HTML XML etc
+@syntax-tags: @green;
+//Class & Id tags
+@syntax-class: @deep-sky-blue;
+@syntax-id: @red;
+//Syntax Meta/Class
+@syntax-meta-class: @white;
+//Syntax Link
+@syntax-link: @white;
+//Syntax-Require
+@syntax-require: @crimson;
+//Syntax Selector
+@syntax-selector: @purple;
+//Syntax Markup/Bold
+@syntax-markup-bold: @orange;
+//Syntax Changed
+@syntax-changed: @yellow;
+//Syntax-Deleted
+@syntax-deleted: @red;
+//Syntax Itallic
+@syntax-itallic: @silver;
+//Syntax Inserted
+@syntax-inserted: @purple;
+//Syntax Quote
+@syntax-quote: @cyan;
+//Syntax List
+@syntax-List: @yellow;
+//Syntax Raw/Inline
+@syntax-raw-inline: @coral;
+//Syntax Source/GFM/Markup/Heading
+@syntax-heading: @syntax-text-color;
+////////////////////////////////////////////////////////////////////////////
 // Guide colors
-@syntax-wrap-guide-color: @blue; //Marks Page Wrap Point
-@syntax-indent-guide-color: @white;
-@syntax-invisible-character-color: @blue;//Space-Markers & Line-Endings
 
-// For find and replace markers
+//Marks Page-Wrapping Point
+@syntax-wrap-guide-color: @red;
+//Vertical Gaps in Syntax & Wrapped-Lines
+@syntax-indent-guide-color: @blue;
+//Main-Tags, Space-Markers & Line-Endings
+@syntax-invisible-character-color: @white;
+//Invisibles
+@invisible: @red;
+//Find and Replace Markers
 @syntax-result-marker-color: lighten(@black, 20%);
-@syntax-result-marker-color-selected: @blue;
+//Border Selected 'Find & Replace'
+@syntax-result-marker-color-selected: @yellow;
+////////////////////////////////////////////////////////////////////////////
+//Gutter Colors
 
-// Gutter colors
-@syntax-gutter-text-color: @green; //Gutter Numbers-Color
-//Selected Line-Number
+//Line Number
+@syntax-gutter-text-color: @lime;
+//Selected Line-Number Text
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: @black; //Gutter BackGround
-//Marks the Line Your On
-@syntax-gutter-background-color-selected: @dark-gray;
+//Gutter BackGround
+@syntax-gutter-background-color: @black;
+//Seleced Line
+@syntax-gutter-background-color-selected: lighten(@black, 50%);
 
-// For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
+//'git diff info' In Gutter
+@syntax-color-renamed: @yellow;
 @syntax-color-added: @green;
 @syntax-color-modified: @orange;
 @syntax-color-removed: @red;
