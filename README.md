@@ -3,7 +3,7 @@ This is a colorful syntax theme for those of us who enjoy bright and easy to rea
 # HTML
 ![ScreenShot](img/Example-HTML-Code.png)
 # Bash
-![ScreenShot](img/Example-Bash-Code.png)
+![ScreenShot](img/Example-Bash.png)
 # C
 ![ScreenShot](img/Example-C-Code.png)
 # C++
